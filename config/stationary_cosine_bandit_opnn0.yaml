@@ -1,0 +1,23 @@
+env:
+    name: cosine
+    T: 10000
+    N: 256
+    d: 8
+    reward_bound: 1
+    mean_reward_bound: 0.8
+    amplitude: 0.8
+    phase: 0
+    sigma: 0.1
+alg:
+    name: opnn
+    m: 2048
+    L: 3
+    gamma: 100
+    mixture_probability: 0.2
+    e_scale: 0.005
+    g_scale: 0.05
+    beta_scale: 50
+    mu_scale: 0.3
+    tol: 1.e-4
+    J: 0
+    change_detection: False

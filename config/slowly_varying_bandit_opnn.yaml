@@ -1,0 +1,28 @@
+env:
+    name: cosine_varying
+    reward_bound: 1
+    T: 10000
+    N: 100
+    d: 10
+    frequency: 3
+    amplitude: 0.8
+    sigma: 0.1
+alg:
+    name: opnn
+    m: 2048
+    L: 3
+    gamma: 100
+    mixture_probability: 0.2
+    e_scale: 0.005
+    g_scale: 0.1
+    beta_scale: 50
+    mu_scale: 0.2
+    tol: 1.e-4
+    J: 100
+    lambda: 10
+    batch_size: 10000
+    optimizer: sgd
+    eta: 1.e-8
+    change_detection: True
+    prob_scale: 1.0
+    epsilon_scale: 0.02

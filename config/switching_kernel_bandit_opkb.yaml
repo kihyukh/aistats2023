@@ -1,0 +1,35 @@
+env:
+    name: switching
+    switch_time:
+        - 3000
+    reward_scale: 1
+    reward_bound: 1
+    random_reward: False
+    T: 10000
+    N: 100
+    sigma: 0.1
+    mean_reward_bound: 0.8
+    env:
+        name: kernel
+        kernel:
+            name: rbf
+            length_scale: 0.2
+        N: 100
+        d: 10
+        mean_reward_bound: 0.8
+        sigma: 0.1
+        T: 10000
+alg:
+    name: opkb
+    kernel:
+        name: rbf
+        length_scale: 0.2
+    gamma: 100
+    mixture_probability: 0.2
+    e_scale: 0.01
+    g_scale: 0.05
+    beta_scale: 50
+    mu_scale: 0.2
+    tol: 1.e-4
+    change_detection: True
+    epsilon_scale: 0.005

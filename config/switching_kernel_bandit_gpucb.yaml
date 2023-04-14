@@ -1,0 +1,30 @@
+env:
+    name: switching
+    switch_time:
+        - 3000
+    reward_scale: 1.0
+    random_reward: False
+    T: 10000
+    N: 100
+    reward_bound: 1
+    mean_reward_bound: 0.8
+    sigma: 0.1
+    env:
+        name: kernel
+        kernel:
+            name: rbf
+            length_scale: 0.2
+        N: 100
+        d: 10
+        mean_reward_bound: 0.8
+        sigma: 0.1
+        T: 10000
+alg:
+    name: gpucb
+    kernel:
+        name: rbf
+        length_scale: 0.2
+    window: 3000
+    lambda: 20
+    v: 0.01
+    tol: 1.e-4
